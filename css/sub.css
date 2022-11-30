@@ -1,0 +1,70 @@
+.title {
+  text-align: center;
+  width: 100vw;
+  height: 555px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 120px;
+  flex-direction: row;
+}
+.title div {
+  overflow: hidden;
+}
+.title div h1 {
+  opacity: 0;
+  visibility: hidden;
+  font-size: 48px;
+  transform: translateX(150%);
+  transition: 1s;
+  color: white;
+}
+.title.lighting {
+  background: url(../img/sub1.png) 50% 50%/cover no-repeat;
+}
+.title.tables {
+  background: url(../img/sub2.png) 50% 50%/cover no-repeat;
+}
+.title.seating {
+  background: url(../img/sub3.png) 50% 50%/cover no-repeat;
+}
+.title.on div h1 {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 120px;
+}
+.gallery h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.gallery p {
+  margin-bottom: 60px;
+}
+.gallery div {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.gallery div img {
+  margin-bottom: 25px;
+  width: 32%;
+}
+
+@media screen and (max-width: 450px) {
+  br {
+    display: none !important;
+  }
+  .title {
+    height: 400px;
+  }
+}/*# sourceMappingURL=sub.css.map */
